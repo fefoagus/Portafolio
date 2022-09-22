@@ -256,7 +256,7 @@ video {
     opacity: .5;
 }
 
-.menu__item:hover{
+.menu__item:hover {
     color: #ffffff;
 }
 
@@ -475,22 +475,20 @@ video {
 .carousel.slide {
     border-radius: 15px;
     height: 100%;
-    filter: drop-shadow(0px 0px 10px rgb(126, 126, 126))
+    box-shadow: 0px 0px 28px #444444;
 }
 
 .carousel-inner {
     height: 100%;
     border-radius: 15px;
-    filter: drop-shadow(0px 0px 10px rgb(126, 126, 126))
 }
-.carousel-item{
-    border-radius: 15px;
-    filter: drop-shadow(0px 0px 10px rgb(126, 126, 126))
 
+.carousel-item {
+    border-radius: 15px;
 }
+
 .d-block {
     border-radius: 15px;
-    filter: drop-shadow(0px 0px 10px rgb(126, 126, 126))
 }
 
 .head__acce.pri.mi {
@@ -991,7 +989,7 @@ mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         padding: 4px 0px;
     }
 
-    .menu__item.s{
+    .menu__item.s {
         display: inline;
     }
 
