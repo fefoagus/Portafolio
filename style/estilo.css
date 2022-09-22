@@ -482,8 +482,12 @@ video {
     height: 100%;
     border-radius: 15px;
 }
+<<<<<<< HEAD
 
 .carousel-item {
+=======
+.carousel-item{
+>>>>>>> 90317ad02aacf199fc25550e5e8ede08c3f53660
     border-radius: 15px;
 }
 
