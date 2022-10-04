@@ -1,0 +1,224 @@
+/* CONTACTO-------------------------------------- */
+
+@import "../utilities/mixin";
+
+@import "../utilities/variables";
+
+.contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr 70px 90px 120px;
+    justify-content: center;
+    row-gap: $espaciado;
+
+    .expemain__marcoco.ec {
+        @include transpartente();
+        grid-row: 2/3;
+        margin: auto;
+        width: 15rem;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        .marcoco__h {
+            font-family: $fontfamily;
+            font-size: 1.4rem;
+            opacity: 0.5;
+        }
+    }
+
+    .form {
+        @include transpartente();
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 60px 1fr 70px;
+        grid-row: 3/4;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+
+        .form__input.t {
+            grid-row: 1/2;
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .form__input.e {
+            grid-row: 2/3;
+            width: 80%;
+            margin: 0 auto auto auto;
+            height: 40px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .form__textarea {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            border: none;
+            border-radius: 15px;
+            resize: none;
+        }
+
+        .submit {
+            width: 50%;
+            height: 40px;
+            margin: auto;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .redes {
+        @include transpartente();
+        grid-row: 4/5;
+        margin: auto;
+        width: 15rem;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        .redes__p {
+            font-family: $fontfamily;
+            font-size: 1.4rem;
+            opacity: 0.5;
+        }
+    }
+
+    .social_buttons {
+        grid-row: auto;
+        display: flex;
+        justify-content: center;
+        margin: 10px 5%;
+    }
+
+
+    .social-button {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        margin: 0 4px;
+    }
+
+    .social-button__inner {
+        @include transpartente();
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        z-index: 2;
+    }
+
+    .social-button i,
+    .social-button svg {
+        transition: 0.3s;
+    }
+
+    .social-button i {
+        font-size: 28px;
+    }
+
+    .social-button svg {
+        height: 40%;
+        width: 40%;
+    }
+
+    .social-button::after {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 15px;
+        transition: 0.3s;
+        z-index: -1;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    .social-button:focus,
+    .social-button:hover {
+        color: #ffffff !important;
+    }
+
+    .social-button:focus::after,
+    .social-button:hover::after {
+        width: 80%;
+        height: 80%;
+        top: -10px;
+        left: -10px;
+        transform: rotateZ(50deg);
+    }
+
+    .social-button--linkedin {
+        color: #0066ff !important;
+    }
+
+    .social-button--linkedin::after {
+        background: #0066ff;
+    }
+}
+
+.social-button--github {
+    color: #000000 !important;
+}
+
+.social-button--github::after {
+    background: #000000;
+}
+.social-button--instagram {
+    color: #ff4f7b !important;
+}
+
+.social-button--instagram::after {
+    background: #ff4f7b;
+}
+.social-button--whatsapp {
+    color: #00c921 !important;
+}
+
+.social-button--whatsapp::after {
+    background: #00c921;
+}
+
+.social-button--download {
+    color: #ffae00 !important;
+}
+
+.social-button--download::after {
+    background: #ffae00;
+}
+.pie {
+    @include transpartente();
+    grid-column: 1/2;
+    grid-row: 6/7;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    z-index: 1;
+
+    .pie__p {
+        text-align: center;
+        font-size: 0.9rem !important;
+        margin-top: 3px;
+        line-height: 20px;
+    }
+}

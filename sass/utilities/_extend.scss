@@ -1,0 +1,38 @@
+%experiencia {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 5% auto;
+}
+
+%hexper{
+    text-align: center;
+    font-family: $fontfamily;
+    opacity: .5;
+}
+
+%pexpe{
+    text-align: center;
+    margin: 20px 5%;
+}
+
+%button{
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 55px;
+    width: 140px;
+    opacity: 1;
+    border: none;
+    background: rgb(124, 118, 226);
+    background: rgb(236, 69, 235);
+    background: linear-gradient(304deg, rgba(236, 69, 235, 0.7931547619047619) 0%, rgba(255, 251, 0, 0.617) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)
+}

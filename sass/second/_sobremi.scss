@@ -1,0 +1,170 @@
+/* SOBRE MI-------------------------------------- */
+
+@import "../utilities/variables";
+
+@import "../utilities/mixin";
+
+.bodymi {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr 70px 120px;
+    gap: $espaciado;
+
+    .head {
+        grid-row: 1/2;
+        .head__menu-burger{
+            .head__menu-burger__blur{
+                .menu__box{
+                    .lista{
+                        .menu__item.s{
+                            padding: 6.7px 0px;
+                            margin: 0px 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sobremi {
+        @include transpartente();
+        height: 60px;
+        width: 250px;
+        margin: auto;
+        z-index: 2;
+        .sobremi__h {
+            margin: 5% auto;
+            text-align: center;
+            font-family: $fontfamily;
+            font-size: 27px;
+            opacity: .5;
+        }
+    }
+    .mainmi {
+        grid-row: 3/4;
+        height: 80%;
+        .mainmi__img {
+            @include transpartente();
+            position: relative;
+            width: 80%;
+            margin: 0px 10%;
+            z-index: 2;
+            padding: 1.2rem;
+            .carousel.slide {
+                border-radius: 15px;
+                height: 100%;
+                filter: drop-shadow(0px 0px 10px rgb(126, 126, 126));
+                .carousel-inner {
+                    height: 100%;
+                    border-radius: 15px;
+                    filter: drop-shadow(0px 0px 10px rgb(126, 126, 126));
+                    .carousel-item{
+                        border-radius: 15px;
+                        filter: drop-shadow(0px 0px 10px rgb(126, 126, 126));
+                    }
+                    .d-block {
+                        border-radius: 15px;
+                        filter: drop-shadow(0px 0px 10px rgb(126, 126, 126))
+                    }
+                }
+            }
+        }
+        .mainmi__p {
+            @include transpartente();
+            position: relative;
+            top: -60px;
+            padding-bottom: 10px;
+            width: 90%;
+            margin: 0px 5%;
+            z-index: 1;
+            .mainmi__p__p {
+                text-align: center;
+                padding: 25% 20px 10px 20px;
+                font-size: 1rem !important;
+            }
+            
+        }
+    }
+    .button__s {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0px auto auto auto;
+        text-decoration: none;
+        .button__bn {
+            @extend %button;
+            .span {
+                font-family: $fontfamily;
+                color: #ffffff;
+                font-weight: 500;
+                letter-spacing: 0.7px;
+                text-decoration: none;
+            }
+        }
+    }
+    .pie.s {
+        @include transpartente();
+        grid-row: 5/6;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        z-index: 1;
+        .pie__p {
+            text-align: center;
+            font-size: .9rem !important;
+            margin-top: 3px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+.button__bn:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.button__bn:hover .span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}

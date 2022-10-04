@@ -1,0 +1,168 @@
+/* INICIO--------------------------------------------------------*/
+
+@import "../utilities/mixin";
+
+@import "../utilities/variables";
+
+.index {
+    grid-template-rows: 70px 1fr 70px 120px;
+    gap: $espaciado;
+
+    .head {
+        grid-row: 1/2;
+    }
+
+    .maini {
+        grid-row: 2/3;
+        height: 95%;
+
+        .maini__bienvenido {
+            @include transpartente();
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr 350px;
+            margin: 0px 10% 0px 10%;
+            width: 80%;
+            height: 100%;
+            padding-bottom: 5%;
+
+            .maini__bienvenido__marco {
+                @include transpartente();
+                grid-row: 1/2;
+                display: flex;
+                width: 13rem;
+                height: 60px;
+                margin: auto;
+
+                .maini__bienvenido__marco__hh {
+                    margin: auto;
+                    display: inline-block;
+                    text-align: center;
+                    font-family: $fontfamily;
+                    font-size: 1.5rem;
+                    opacity: .5;
+                }
+            }
+
+            .maini__perfil {
+                grid-column: auto;
+                grid-row: 2/3;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                img{
+                    filter: drop-shadow(0px 0px 10px #444444);
+                }
+            }
+
+            .maini__banner {
+                @include transpartente();
+                width: 88%;
+                height: auto;
+                margin: auto;
+                padding: .5rem;
+
+                .maini__banner__h {
+                    margin: .5rem auto;
+                    text-align: center;
+                    font-size: 25px;
+                    font-family: $fontfamily;
+                    opacity: .6;
+                }
+
+                .maini__banner__p {
+                    font-family: $fontfamily2;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding: 10%;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    .button {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: auto;
+        text-decoration: none;
+        .button__bn {
+            @extend %button;
+            .span {
+                font-family: $fontfamily;
+                color: #ffffff;
+                font-weight: 500;
+                letter-spacing: 0.7px;
+                text-decoration: none;
+            }
+            
+        }
+    }
+
+    .pie {
+        @include transpartente();
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        z-index: 1;
+        .pie__p {
+            text-align: center;
+            font-size: .9rem !important;
+            margin-top: 3px;
+            line-height: 20px;
+        }
+    }
+    .button__bn:hover {
+        animation: bn54rotate 0.7s ease-in-out both;
+    }
+    
+    .button__bn:hover .span {
+        animation: bn54storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+    }
+    
+    @keyframes bn54rotate {
+        0% {
+            transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+    
+        25% {
+            transform: rotate(3deg) translate3d(0, 0, 0);
+        }
+    
+        50% {
+            transform: rotate(-3deg) translate3d(0, 0, 0);
+        }
+    
+        75% {
+            transform: rotate(1deg) translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+    }
+    
+    @keyframes bn54storm {
+        0% {
+            transform: translate3d(0, 0, 0) translateZ(0);
+        }
+    
+        25% {
+            transform: translate3d(4px, 0, 0) translateZ(0);
+        }
+    
+        50% {
+            transform: translate3d(-3px, 0, 0) translateZ(0);
+        }
+    
+        75% {
+            transform: translate3d(2px, 0, 0) translateZ(0);
+        }
+    
+        100% {
+            transform: translate3d(0, 0, 0) translateZ(0);
+        }
+    }
+}

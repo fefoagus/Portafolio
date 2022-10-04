@@ -1,0 +1,223 @@
+/* EXPERIENCIA -------------------------------------- */
+
+@import "../utilities/extend";
+
+@import "../utilities/mixin";
+
+@import "../utilities/variables";
+
+.bodyex {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 80px 120px;
+
+    .expemain {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+        margin: 20px auto 0 auto;
+
+        .expemain__marcoco {
+            @include transpartente();
+            grid-column: 1/3;
+            grid-row: 1/2;
+            width: 15rem;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .marcoco__h {
+                font-family: $fontfamily;
+                font-size: 1.4rem;
+                opacity: .5;
+            }
+        }
+
+        .experiencia {
+            @include transpartente();
+            width: 90%;
+            height: auto;
+            margin: 5%;
+        }
+
+        .experiencia.a {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                @extend %experiencia;
+            }
+
+            h2 {
+                @extend %hexper;
+                margin: 2px;
+            }
+
+            p {
+                @extend %pexpe;
+            }
+        }
+
+        .experiencia.b {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                @extend %experiencia;
+            }
+
+            h2 {
+                @extend %hexper;
+                margin: 2px;
+            }
+
+            p {
+                @extend %pexpe;
+            }
+        }
+
+        .experiencia.c {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                @extend %experiencia;
+            }
+
+            h2 {
+                @extend %hexper;
+            }
+
+            p {
+                @extend %pexpe;
+            }
+        }
+
+        .experiencia.d {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                @extend %experiencia;
+            }
+
+            h2 {
+                @extend %hexper;
+            }
+
+            p {
+                @extend %pexpe;
+            }
+
+        }
+    }
+
+    .button.e {
+        margin-bottom: 20px;
+
+        .button__bn {
+            @extend %button;
+        }
+
+        .button__bn,
+        .span {
+            font-family: $fontfamily;
+            color: #ffffff;
+            font-weight: 500;
+            letter-spacing: 0.7px;
+            text-decoration: none;
+        }
+    }
+
+    .button {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: auto;
+        text-decoration: none;
+    }
+
+    .pie {
+        @include transpartente();
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .pie.e {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .pie__p {
+        text-align: center;
+        font-size: .9rem !important;
+        margin-top: 3px;
+        line-height: 20px;
+    }
+}
+
+.button__bn:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.button__bn:hover .span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
