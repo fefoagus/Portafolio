@@ -487,7 +487,7 @@ video {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     grid-row: 2/3;
-    width: 70%;
+    width: 300px;
     height: 60px;
     margin: auto;
     display: flex;
@@ -527,7 +527,7 @@ video {
       -webkit-backdrop-filter: blur(10px);
       border-radius: 15px;
       grid-row: 2/3;
-      width: 70%;
+      width: 300px;
       height: 60px;
       margin: auto;
       display: flex;
