@@ -495,7 +495,8 @@ video {
     justify-content: center; }
     .bodyco .marcoco .marcoco__h {
       font-family: "Noto Sans";
-      opacity: .5; }
+      opacity: .5;
+      font-size: 1.5rem; }
   .bodyco .contenedor {
     display: grid;
     grid-template-columns: 1;
@@ -1275,7 +1276,7 @@ video {
   /* m------------------------CONTACTO   -------------------------------------- */
   .contact {
     margin: auto;
-    grid-template-columns: 300px 1fr 1fr 300px;
+    grid-template-columns: 150px 1fr 1fr 150px;
     grid-template-rows: 70px 70px 1fr 120px;
     justify-content: inherit; }
     .contact .head {
@@ -1368,8 +1369,4 @@ video {
       padding: 4% 5% 0 30%;
       height: 65%; } }
 
-@media screen and (min-width: 1200px) {
-  .contact {
-    grid-template-rows: 70px 70px 650px 120px; }
-    .contact .social_buttons .social-buttons__button {
-      margin: 20px; } }
+
