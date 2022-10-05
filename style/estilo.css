@@ -308,7 +308,7 @@ video {
 
 @keyframes slide {
   100% {
-    top: -250px; } }
+    top: -240px; } }
         .index .maini .maini__bienvenido .maini__banner .dynamic-txts li span {
           position: relative; }
         .index .maini .maini__bienvenido .maini__banner .dynamic-txts li span::after {
