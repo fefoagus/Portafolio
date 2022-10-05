@@ -76,6 +76,34 @@
     /* m-----------------------------------index    ----------------------- */
 
     .index {
+        .maini{
+.maini__bienvenido{
+    .maini__banner{
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .dynamic-txts{
+                height: 48px;
+                margin: auto;
+                width: 250px;
+                text-align: center;
+                li{
+                    font-size: 38px;
+                }
+            }
+            @keyframes slide {
+                
+                100% {
+                    top: -240px;
+                }
+            }
+
+        }
+    }
+}
+        }
         .button {
             grid-column: 1/2;
             grid-row: 3/4;
@@ -148,7 +176,7 @@
                 grid-template-columns: 400px 1fr;
                 grid-template-rows: 100px 1fr;
                 height: 400px;
-                width: 50%;
+                width: 56%;
                 margin: 90px 400px auto auto;
                 z-index: 1;
                 border-radius: 15px;
@@ -156,7 +184,7 @@
                 .maini__banner {
                     grid-row: 2/3;
                     grid-column: 1/2;
-                    margin: 70px auto 100px auto;
+                    margin: 70px auto 100px 50px;
                     width: 95%;
                     height: 200px;
                     z-index: 3;
@@ -177,7 +205,8 @@
                     grid-column: 1/2;
                     width: 90%;
                     height: 90px;
-                    margin: 40px auto 50px auto;
+                    margin: 40px auto 50px 60px;
+                    z-index: 3;
 
                     .maini__bienvenido__marco__hh {
                         font-size: 40px;
@@ -192,7 +221,7 @@
 
                     img {
                         top: -100px;
-                        right: -60%;
+                        right: -250px;
                         width: 600px;
                         position: absolute;
                         margin-right: 5%;
@@ -285,28 +314,27 @@
             grid-column: 1/3;
             grid-row: 2/3;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 50% 1fr;
             grid-template-rows: 1fr;
             height: auto;
-            margin: auto 5% auto auto;
 
             .mainmi__img {
                 margin: 50px auto 50px 30%;
-                width: 400px;
+                width: 65%;
                 height: 80%;
                 grid-row: 1/2;
                 grid-column: 1/2;
-                padding: 2%;
+                padding: 4%;
             }
 
             .mainmi__p {
                 grid-row: 1/2;
                 grid-column: 2/3;
-                width: 780px;
-                padding: 4% 5% 0 30%;
+                width: 650px;
+                padding: 31px 31px 31px 15%;
                 top: 111px;
                 left: -20%;
-                height: 62%;
+                height: 380px;
 
                 .mainmi__p__p {
                     padding: 0;
@@ -518,7 +546,7 @@
 
     .contact {
         margin: auto;
-        grid-template-columns: 300px 1fr 1fr 300px;
+        grid-template-columns: 150px 1fr 1fr 150px;
         grid-template-rows: 70px 70px 1fr 120px;
         justify-content: inherit;
 
@@ -647,24 +675,27 @@
                     .maini__banner {
                         width: 500px;
                         margin: 70px auto 100px 40px;
+
                     }
                 }
             }
         }
 
         .bodymi {
+            grid-template-columns: 1fr 1fr;
             .mainmi {
                 margin: 0;
                 .mainmi__img {
-                    margin: 50px auto 50px 400px;
-                    height: 82%;
+                    height: 630px;
                 }
 
                 .mainmi__p {
+                    top: 160px;
                     left: -30%;
                     height: 345px;
-                    padding: 4% 5% 0 30%;
-                    height: 65%;
+                    padding: 40px 40px 0 200px;
+                    height: 380px;
+                    width: 800px;
                 }
             }
         }

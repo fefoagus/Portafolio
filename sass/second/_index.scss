@@ -57,17 +57,75 @@
 
             .maini__banner {
                 @include transpartente();
+                background: rgb(218, 218, 218);
                 width: 88%;
                 height: auto;
-                margin: auto;
+                margin: auto auto 40px auto;
                 padding: .5rem;
 
-                .maini__banner__h {
-                    margin: .5rem auto;
+                
+                .wrapper .static-txt p{
+                    color: rgb(94, 94, 94);
+                    font-size: 30px;
+                    font-weight: 400;
                     text-align: center;
-                    font-size: 25px;
-                    font-family: $fontfamily;
-                    opacity: .6;
+                }
+                .static-txt{
+                    margin: 5px 0;
+                }
+                .wrapper .dynamic-txts {
+                    height: 49px;
+                    overflow: hidden;
+                    margin: 0;
+                }
+                .dynamic-txts{
+                    line-height: normal;
+                }
+                .dynamic-txts li {
+                    color: rgb(94, 94, 94);
+                    list-style: none;
+                    font-size: 40px;
+                    font-weight: 300;
+                    position: relative;
+                    text-align: center;
+                    top: 0;
+                    opacity: .8;
+                    animation: slide 15s steps(5) infinite;
+                }
+                
+                @keyframes slide {
+                
+                    100% {
+                        top: -250px;
+                    }
+                }
+                
+                
+                .dynamic-txts li span {
+                    position: relative;
+                }
+                
+                .dynamic-txts li span::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgb(218, 218, 218);
+                    border-left: 2px solid rgb(94, 94, 94);
+                    animation: typing 3s steps(10) infinite;
+                }
+                
+                @keyframes typing {
+                
+                    40%,
+                    60% {
+                        left: calc(100% + 30px);
+                    }
+                
+                    100% {
+                        left: 0;
+                    }
                 }
 
                 .maini__banner__p {
