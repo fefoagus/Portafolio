@@ -241,6 +241,7 @@ video {
 
 .menu__box {
     @include transpartente();
+    background: rgba(255, 255, 255, 0.7);
     display: block;
     position: absolute;
     top: -900%;

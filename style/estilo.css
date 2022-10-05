@@ -190,6 +190,7 @@ video {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
+  background: rgba(255, 255, 255, 0.7);
   display: block;
   position: absolute;
   top: -900%;
@@ -396,9 +397,11 @@ video {
   gap: 20px; }
   .bodymi .head {
     grid-row: 1/2; }
-    .bodymi .head .head__menu-burger .head__menu-burger__blur .menu__box .lista .menu__item.s {
-      padding: 6.7px 0px;
-      margin: 0px 7px; }
+    .bodymi .head .head__menu-burger .head__menu-burger__blur .menu__box {
+      background: rgba(255, 255, 255, 0.7); }
+      .bodymi .head .head__menu-burger .head__menu-burger__blur .menu__box .lista .menu__item.s {
+        padding: 6.7px 0px;
+        margin: 0px 7px; }
   .bodymi .sobremi {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -536,7 +539,8 @@ video {
     justify-content: center; }
     .bodyco .marcoco .marcoco__h {
       font-family: "Noto Sans";
-      opacity: .5; }
+      opacity: .5;
+      font-size: 1.4rem; }
   .bodyco .contenedor {
     display: grid;
     grid-template-columns: 1;
