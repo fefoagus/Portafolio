@@ -31,12 +31,16 @@
         width: 250px;
         margin: auto;
         z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .sobremi__h {
-            margin: 5% auto;
-            text-align: center;
             font-family: $fontfamily;
-            font-size: 27px;
+            font-size: 1.4rem;
             opacity: .5;
+            font-weight: bold;
+            margin: auto;
         }
     }
     .mainmi {

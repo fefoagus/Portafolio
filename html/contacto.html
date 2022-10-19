@@ -74,15 +74,16 @@
     <span class="head__acce seg"></span>
 
 
-    <form class="form">
+    <form class="form" id="form">
 
-        <input type="text" class="form__input t" placeholder="Nombre:">
+        <input type="text" class="form__input t" placeholder="Nombre:" name="name">
 
-        <input type="email" class="form__input e" placeholder="Email:">
+        <input type="email" class="form__input e" placeholder="Email:" name="email">
 
-        <textarea class="form__textarea" rows="10" cols="30" placeholder="Escribe tu mensaje aqui!!!"></textarea>
+        <textarea class="form__textarea" rows="10" cols="30" placeholder="Escribe tu mensaje aqui!!!"
+            name="menssage"></textarea>
 
-        <input type="submit" value="Enviar mensaje" class="submit">
+        <input type="submit" value="Enviar mensaje" class="submit" id="button">
 
     </form>
 
@@ -157,9 +158,34 @@
 
 
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+    <script type="text/javascript">
+        emailjs.init('7PLz8uSy8_6P_3LHq')
+    </script>
 
+    <script>
+        const btn = document.getElementById('button');
 
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_6ai4umi';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Enviar mensaje';
+                        alert('Enviado!');
+                    }, (err) => {
+                        btn.value = 'Enviar mensaje';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
 
 
 </body>

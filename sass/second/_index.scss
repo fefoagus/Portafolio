@@ -50,81 +50,25 @@
                 height: auto;
                 display: flex;
                 justify-content: center;
-                img{
+
+                img {
                     filter: drop-shadow(0px 0px 10px #444444);
                 }
             }
 
             .maini__banner {
                 @include transpartente();
-                background: rgb(218, 218, 218);
                 width: 88%;
                 height: auto;
                 margin: auto auto 40px auto;
                 padding: .5rem;
 
-                
-                .wrapper .static-txt p{
-                    color: rgb(94, 94, 94);
-                    font-size: 30px;
-                    font-weight: 400;
-                    text-align: center;
-                }
-                .static-txt{
-                    margin: 5px 0;
-                }
-                .wrapper .dynamic-txts {
-                    height: 49px;
-                    overflow: hidden;
-                    margin: 0;
-                }
-                .dynamic-txts{
-                    line-height: normal;
-                }
-                .dynamic-txts li {
-                    color: rgb(94, 94, 94);
-                    list-style: none;
-                    font-size: 40px;
-                    font-weight: 300;
-                    position: relative;
-                    text-align: center;
-                    top: 0;
-                    opacity: .8;
-                    animation: slide 15s steps(5) infinite;
-                }
-                
-                @keyframes slide {
-                
-                    100% {
-                        top: -250px;
-                    }
-                }
-                
-                
-                .dynamic-txts li span {
-                    position: relative;
-                }
-                
-                .dynamic-txts li span::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                    background: rgb(218, 218, 218);
-                    border-left: 2px solid rgb(94, 94, 94);
-                    animation: typing 3s steps(10) infinite;
-                }
-                
-                @keyframes typing {
-                
-                    40%,
-                    60% {
-                        left: calc(100% + 30px);
-                    }
-                
-                    100% {
-                        left: 0;
+                .wrapper {
+                    margin: 25px auto 0 auto;
+                    h2{
+                        text-align: center;
+                        font-size: 1.9rem;
+                        opacity: .7;
                     }
                 }
 
@@ -144,8 +88,10 @@
         grid-row: 3/4;
         margin: auto;
         text-decoration: none;
+
         .button__bn {
             @extend %button;
+
             .span {
                 font-family: $fontfamily;
                 color: #ffffff;
@@ -153,7 +99,7 @@
                 letter-spacing: 0.7px;
                 text-decoration: none;
             }
-            
+
         }
     }
 
@@ -164,6 +110,7 @@
         margin: 0px 10px 0px 10px;
         padding: 10px;
         z-index: 1;
+
         .pie__p {
             text-align: center;
             font-size: .9rem !important;
@@ -171,54 +118,55 @@
             line-height: 20px;
         }
     }
+
     .button__bn:hover {
         animation: bn54rotate 0.7s ease-in-out both;
     }
-    
+
     .button__bn:hover .span {
         animation: bn54storm 0.7s ease-in-out both;
         animation-delay: 0.06s;
     }
-    
+
     @keyframes bn54rotate {
         0% {
             transform: rotate(0deg) translate3d(0, 0, 0);
         }
-    
+
         25% {
             transform: rotate(3deg) translate3d(0, 0, 0);
         }
-    
+
         50% {
             transform: rotate(-3deg) translate3d(0, 0, 0);
         }
-    
+
         75% {
             transform: rotate(1deg) translate3d(0, 0, 0);
         }
-    
+
         100% {
             transform: rotate(0deg) translate3d(0, 0, 0);
         }
     }
-    
+
     @keyframes bn54storm {
         0% {
             transform: translate3d(0, 0, 0) translateZ(0);
         }
-    
+
         25% {
             transform: translate3d(4px, 0, 0) translateZ(0);
         }
-    
+
         50% {
             transform: translate3d(-3px, 0, 0) translateZ(0);
         }
-    
+
         75% {
             transform: translate3d(2px, 0, 0) translateZ(0);
         }
-    
+
         100% {
             transform: translate3d(0, 0, 0) translateZ(0);
         }

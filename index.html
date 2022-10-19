@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo.png">
-    <meta name="description" content="Utilizo este portafolio para validar mis estudios y las competencias desarrolladas (conocimientos, actitudes y habilidades) es único, ya que se desarrolla en base a mi experiencia y auto-reflexión.">
+    <meta name="description"
+        content="Utilizo este portafolio para validar mis estudios y las competencias desarrolladas (conocimientos, actitudes y habilidades) es único, ya que se desarrolla en base a mi experiencia y auto-reflexión.">
     <meta name="keywords" content="portafolio, front-end, trabajo, freelance, boostrap, html, css">
     <title>Inicio</title>
 </head>
@@ -77,18 +78,12 @@
                 <img src="img/perfil.png" alt="Foto perfil fede">
             </div>
             <div class="maini__banner">
-                <div class="wrapper"> 
-                    <div class="static-txt"> <p>Soy</p> </div>
-                    <ul class="dynamic-txts"> 
-                    <li><span>Fede Martinez</span></li>     
-                    <li><span>Diseñador</span></li> 
-                    <li><span>Desarrollador</span></li> 
-                    <li><span>Ilustrador</span></li> 
-                    <li><span>Programador</span></li> 
-                    </ul> 
-                <p class="maini__banner__p">Aquí conocerán mis destrezas, habilidades, conocimientos y proyectos.</p>
+                <div class="wrapper">
+                    <h2 class="type">Soy <br><span class="auto-type"></span></h2>
+                    <p class="maini__banner__p">Aquí conocerán mis destrezas, habilidades, conocimientos y proyectos.
+                    </p>
+                </div>
             </div>
-        </div>
 
 
 
@@ -120,6 +115,17 @@
             © Todos los derechos reservados - 2022</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Fede Martinez", "Desarrollador", "Programador", "Diseñador", "Ilustrador"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
 
 </body>
 

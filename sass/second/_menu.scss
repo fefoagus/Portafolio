@@ -168,9 +168,9 @@ video {
     grid-template-columns: 1fr;
     grid-template-rows: 54px;
     position: fixed;
-    width: 80%;
+    width: 85%;
     z-index: 200;
-    margin: 15px 10% 0 10%;
+    margin: 15px 7.5% 0 7.5%;
 }
 
 @supports (backdrop-filter: none) {

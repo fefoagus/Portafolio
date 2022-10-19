@@ -1,5 +1,20 @@
 @media (min-width: 700px) {
 
+    .index{
+        .maini{
+            .maini__bienvenido{
+                .maini__banner{
+                    .wrapper{
+                        .type{
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     /* -------------Sobremi------------------------- */
     .bodymi {
         .mainmi {
@@ -76,34 +91,16 @@
     /* m-----------------------------------index    ----------------------- */
 
     .index {
-        .maini{
-.maini__bienvenido{
-    .maini__banner{
-        .wrapper{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .dynamic-txts{
-                height: 48px;
-                margin: auto;
-                width: 250px;
-                text-align: center;
-                li{
-                    font-size: 38px;
+        .maini {
+            .maini__bienvenido {
+                .maini__banner {
+                    .wrapper {
+                        margin-top: 10px;
+                    }
                 }
             }
-            @keyframes slide {
-                
-                100% {
-                    top: -240px;
-                }
-            }
+        }
 
-        }
-    }
-}
-        }
         .button {
             grid-column: 1/2;
             grid-row: 3/4;
@@ -307,7 +304,14 @@
             grid-row: 2/3;
             grid-column: 2/3;
             margin: 30px 0;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-weight: bold;
+                margin: auto;
+            }
         }
 
         .mainmi {
@@ -431,7 +435,7 @@
     /* m------------------------EXPERIENCIA   ------------------------------------ */
     .bodyex {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100px 1fr 120px 120px;
+        grid-template-rows: 70px 1fr 120px 120px;
 
         .head {
 
@@ -495,7 +499,7 @@
                 border-radius: 15px;
                 width: 300PX;
                 height: 60px;
-                margin: auto;
+                margin: 25px auto auto auto;
             }
 
             .experiencia {
@@ -629,6 +633,13 @@
             .submit {
                 width: 30%;
                 margin: auto;
+                transition: transform 0.5s;
+            }
+
+            .submit:hover {
+                transform: scale(0.95);
+                background-color: rgba(97, 97, 97, 0.178);
+                color: rgb(255, 255, 255);
             }
         }
 
@@ -683,8 +694,10 @@
 
         .bodymi {
             grid-template-columns: 1fr 1fr;
+
             .mainmi {
                 margin: 0;
+
                 .mainmi__img {
                     height: 630px;
                 }
@@ -702,10 +715,11 @@
     }
 
 
-    .contact{
+    .contact {
         grid-template-rows: 70px 70px 650px 120px;
-        .social_buttons{
-            .social-buttons__button{
+
+        .social_buttons {
+            .social-buttons__button {
                 margin: 20px;
             }
         }
