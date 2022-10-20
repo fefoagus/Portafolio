@@ -1259,7 +1259,7 @@ video {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 15px;
-        width: 300PX;
+        width: 300px;
         height: 60px;
         margin: 25px auto auto auto; }
       .bodyex .expemain .experiencia {
@@ -1379,6 +1379,11 @@ video {
     .index .maini .maini__bienvenido .maini__banner {
       width: 500px;
       margin: 70px auto 100px 40px; }
+      .index .maini .maini__bienvenido .maini__banner .wrapper .type {
+        text-align: inherit;
+        margin-left: 140px; }
+      .index .maini .maini__bienvenido .maini__banner .maini__banner__p {
+        margin-top: 30px; }
   .bodymi {
     grid-template-columns: 1fr 1fr; }
     .bodymi .mainmi {
