@@ -281,60 +281,12 @@ video {
         height: auto;
         margin: auto auto 40px auto;
         padding: .5rem; }
-<<<<<<< HEAD
         .index .maini .maini__bienvenido .maini__banner .wrapper {
           margin: 25px auto 0 auto; }
           .index .maini .maini__bienvenido .maini__banner .wrapper h2 {
             text-align: center;
             font-size: 1.9rem;
             opacity: .7; }
-=======
-        .index .maini .maini__bienvenido .maini__banner .wrapper .static-txt p {
-          color: #5e5e5e;
-          font-size: 30px;
-          font-weight: 400;
-          text-align: center; }
-        .index .maini .maini__bienvenido .maini__banner .static-txt {
-          margin: 5px 0; }
-        .index .maini .maini__bienvenido .maini__banner .wrapper .dynamic-txts {
-          height: 41px;
-          overflow: hidden;
-          margin: 0; }
-        .index .maini .maini__bienvenido .maini__banner .dynamic-txts {
-          line-height: normal; }
-        .index .maini .maini__bienvenido .maini__banner .dynamic-txts li {
-          color: #5e5e5e;
-          list-style: none;
-          font-size: 35.9px;
-          font-weight: 300;
-          position: relative;
-          text-align: center;
-          top: 0;
-          opacity: .8;
-          animation: slide 15s steps(5) infinite; }
-
-@keyframes slide {
-  100% {
-    top: -240px; } }
-        .index .maini .maini__bienvenido .maini__banner .dynamic-txts li span {
-          position: relative; }
-        .index .maini .maini__bienvenido .maini__banner .dynamic-txts li span::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background: #dadada;
-          border-left: 2px solid #5e5e5e;
-          animation: typing 3s steps(10) infinite; }
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px); }
-  100% {
-    left: 0; } }
->>>>>>> 0444e39956ba7d30a1263baad68441d3f78836fd
         .index .maini .maini__bienvenido .maini__banner .maini__banner__p {
           font-family: "Source Sans Pro", sans-serif;
           font-size: 1.5rem;
