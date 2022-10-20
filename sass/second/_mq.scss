@@ -89,6 +89,10 @@
                 .maini__banner {
                     .wrapper {
                         margin-top: 10px;
+                            .type {
+                                text-align: inherit;
+                                margin-left: 70px;
+                            }
                     }
                 }
             }
@@ -664,6 +668,7 @@
                         margin: 70px auto 100px 40px;
 
                         .wrapper {
+                            margin: 25px auto auto auto;
                             .type {
                                 text-align: inherit;
                                 margin-left: 140px;

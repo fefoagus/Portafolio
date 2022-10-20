@@ -1007,6 +1007,9 @@ video {
   /* m-----------------------------------index    ----------------------- */
   .index .maini .maini__bienvenido .maini__banner .wrapper {
     margin-top: 10px; }
+    .index .maini .maini__bienvenido .maini__banner .wrapper .type {
+      text-align: inherit;
+      margin-left: 70px; }
   .index .button {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -1379,9 +1382,11 @@ video {
     .index .maini .maini__bienvenido .maini__banner {
       width: 500px;
       margin: 70px auto 100px 40px; }
-      .index .maini .maini__bienvenido .maini__banner .wrapper .type {
-        text-align: inherit;
-        margin-left: 140px; }
+      .index .maini .maini__bienvenido .maini__banner .wrapper {
+        margin: 25px auto auto auto; }
+        .index .maini .maini__bienvenido .maini__banner .wrapper .type {
+          text-align: inherit;
+          margin-left: 140px; }
       .index .maini .maini__bienvenido .maini__banner .maini__banner__p {
         margin-top: 30px; }
   .bodymi {
