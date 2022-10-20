@@ -972,7 +972,7 @@ video {
 @media (min-width: 700px) {
   .index .maini .maini__bienvenido .maini__banner .wrapper .type {
     text-align: inherit;
-    margin-left: 150px; }
+    margin-left: 35%; }
     .index .maini .maini__bienvenido .maini__banner .wrapper .type br {
       display: none; }
   /* -------------Sobremi------------------------- */
